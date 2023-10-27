@@ -1,0 +1,78 @@
+/* Allgemeine Style für den gesamten Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style für die Überschrift danke Notion an der Stelle */
+h1 {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Style für den Bereich zur Anzeige von Blog-Einträgen */
+#blog-entries {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style für das Formular zur Eingabe neuer Blog-Einträge */
+#create-entry {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style für Textfelder im Formular */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style für den "Create Entry" Button */
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style für den "Create Entry" Button mit MouseHover */
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Style für Blog-Einträge */
+.blog-entry {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.blog-entry h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.blog-entry p {
+    font-size: 14px;
+    color: #555;
+}
