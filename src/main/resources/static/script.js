@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(response => {
             if (response.ok) {
-                // Eintrag erfolgreich erstellt, also aktualisieren Sie die Liste der Einträge
+                // Eintrag erfolgreich erstellt, also aktualisiere die Liste der Einträge
                 fetchBlogEntries();
             } else {
                 console.error("Fehler beim Erstellen des Blog-Eintrags: " + response.statusText);
@@ -60,6 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Fehler beim Erstellen des Blog-Eintrags: " + error));
     });
 
-    // Rufen Sie die Blog-Einträge auf, wenn die Seite geladen wird
+    // Rufe die Blog-Einträge auf, wenn die Seite geladen wird
     fetchBlogEntries();
 });

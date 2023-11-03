@@ -17,14 +17,14 @@ public class BlogController {
         this.blogService = blogService;
     }
 
-    // HTTP GET-Endpunkt zum Abrufen von Blog-Einträgen
+    // HTTP GET-Endpunkt -> zum Abrufen von Blog-Einträgen
     @GetMapping("/")
     @ResponseBody
     public List<BlogEntry> getBlogEntries() {
         return blogService.getAllBlogEntries();
     }
 
-    // HTTP POST-Endpunkt zum Erstellen eines neuen Blog-Eintrags
+    // HTTP POST-Endpunkt -> zum Erstellen eines neuen Blog-Eintrags
     @PostMapping("/")
     @ResponseBody
     public BlogEntry createBlogEntry(@RequestBody BlogEntry entry) {
