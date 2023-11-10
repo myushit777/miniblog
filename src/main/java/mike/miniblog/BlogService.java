@@ -28,8 +28,7 @@ public class BlogService {
 
     // Methode zum Erstellen eines neuen Blog-Eintrags
     public BlogEntry createBlogEntry(BlogEntry entry) {
-        // Fügen Sie den neuen Eintrag zur Liste hinzu (oder implementieren Sie die Speicherlogik)
         blogEntries.add(entry);
-        return entry; // Geben Sie den erstellten Eintrag zurück
+        return entry; // Gebe den erstellten Eintrag zurück
     }
 }

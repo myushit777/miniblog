@@ -1,78 +1,154 @@
-/* Allgemeine Style für den gesamten Body */
+
+/* ich mache alles schön */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
 }
 
-/* Style für die Überschrift danke Notion an der Stelle */
-h1 {
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
     text-align: center;
     background-color: #333;
     color: #fff;
     padding: 20px;
     margin: 0;
+    border-radius: 8px 8px 0 0;
 }
 
-/* Style für den Bereich zur Anzeige von Blog-Einträgen */
-#blog-entries {
+h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.scrollable {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards, slideUp 0.8s ease-out 0.4s forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.form-section {
     margin: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards, slideDown 0.8s ease-out 0.4s forwards;
 }
 
-/* Style für das Formular zur Eingabe neuer Blog-Einträge */
-#create-entry {
-    margin: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
-/* Style für Textfelder im Formular */
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 5px;
+label {
+    display: block;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    color: #333;
 }
 
-/* Style für den "Create Entry" Button */
+input[type="text"],
+textarea,
+input[type="date"] {
+    width: calc(100% - 12px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards, slideRight 0.8s ease-out 0.4s forwards;
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 button[type="submit"] {
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards, scaleUp 0.8s ease-out 0.4s forwards;
 }
 
-/* Style für den "Create Entry" Button mit MouseHover */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 button[type="submit"]:hover {
     background-color: #555;
 }
 
-/* Style für Blog-Einträge */
 .blog-entry {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards, slideUp 0.8s ease-out 0.4s forwards;
 }
 
 .blog-entry h3 {
-    font-size: 20px;
+    font-size: 24px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .blog-entry p {
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
+    margin-bottom: 5px;
 }
