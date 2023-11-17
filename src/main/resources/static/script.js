@@ -70,3 +70,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Blog-Einträge abrufen und anzeigen, wenn die Seite geladen wird
     fetchBlogEntries();
 });
+

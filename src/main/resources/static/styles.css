@@ -1,154 +1,80 @@
-
-/* ich mache alles schön */
+/* Gemeinsame Stile für das gesamte Dokument */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
     margin: 0;
     padding: 0;
+    background-color: #111;
+    color: #ddd;
 }
 
 .container {
-    max-width: 900px;
-    margin: 20px auto;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    animation: fadeIn 0.8s ease-out forwards;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
+/* Header-Stile */
 header {
     text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    margin: 0;
-    border-radius: 8px 8px 0 0;
-}
-
-h1 {
-    margin: 0;
-    font-size: 28px;
-    letter-spacing: 2px;
-}
-
-.scrollable {
-    max-height: 500px;
-    overflow-y: auto;
-    padding: 20px;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-out forwards, slideUp 0.8s ease-out 0.4s forwards;
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(20px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-.form-section {
-    margin: 20px;
-    padding: 20px;
-    border-top: 1px solid #ddd;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-out forwards, slideDown 0.8s ease-out 0.4s forwards;
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-20px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-input[type="text"],
-textarea,
-input[type="date"] {
-    width: calc(100% - 12px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-out forwards, slideRight 0.8s ease-out 0.4s forwards;
-}
-
-@keyframes slideRight {
-    from {
-        transform: translateX(-20px);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-    opacity: 0;
-    animation: fadeIn 0.8s ease-out forwards, scaleUp 0.8s ease-out 0.4s forwards;
-}
-
-@keyframes scaleUp {
-    from {
-        transform: scale(0.8);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-button[type="submit"]:hover {
-    background-color: #555;
-}
-
-.blog-entry {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px 0;
+    background-color: #ff8c00; /* Helle Orange-Farbe */
+    color: #000; /* Schwarze Schriftfarbe */
     padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    animation: fadeIn 0.8s ease-out forwards, slideUp 0.8s ease-out 0.4s forwards;
 }
 
-.blog-entry h3 {
-    font-size: 24px;
-    color: #333;
+/* Stile für die Scrollbar der Blog-Einträge */
+#blog-entries {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+/* Gemeinsame Stile für Blog-Einträge */
+.blog-entry {
+    border: 1px solid #444;
+    padding: 10px;
     margin-bottom: 10px;
+    background-color: #333;
 }
 
-.blog-entry p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 5px;
+/* Stile für das Formular zum Erstellen neuer Blog-Einträge */
+.form-section {
+    margin-top: 20px;
 }
+
+#create-entry-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#create-entry-form label {
+    margin-bottom: 5px;
+    color: #ddd;
+}
+
+/* Dunkler Grauton für Textfelder */
+#create-entry-form input,
+#create-entry-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #222;
+    color: #ddd;
+    border: 1px solid #444;
+}
+
+/* Button-Stile */
+#create-entry-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ff8c00; /* Helle Orange-Farbe */
+    color: #000; /* Schwarze Schriftfarbe */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#create-entry-form button:hover {
+    background-color: #ff9933; /* Dunklere Orange-Farbe im Hover-Zustand */
+}
+
+/* Füge hier weitere benutzerdefinierte Stile nach Bedarf hinzu */
