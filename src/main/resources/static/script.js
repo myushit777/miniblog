@@ -1,10 +1,10 @@
-// Warten, bis der DOM-Inhalt vollständig geladen ist, bevor das Skript ausgeführt wird
+// DOM soll vollständig geladen werden - bevor das Skript ausgeführt wird
 document.addEventListener("DOMContentLoaded", function () {
     // Funktion zum Abrufen von Blog-Einträgen vom Server
     function fetchBlogEntries() {
         // Einen GET-Request an den Server-Endpunkt '/' senden
         fetch('/')
-            .then(response => response.json())
+            .then(response => response.json()) // Die Serverantwort als JSON verarbeiten
             .then(entries => {
                 // Das Container-Element für die Anzeige von Blog-Einträgen abrufen
                 const blogEntriesContainer = document.getElementById('blog-entries');
@@ -70,4 +70,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // Blog-Einträge abrufen und anzeigen, wenn die Seite geladen wird
     fetchBlogEntries();
 });
-

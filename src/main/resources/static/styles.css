@@ -1,80 +1,79 @@
-/* Gemeinsame Stile für das gesamte Dokument */
+/* Hallo hier wird alles schöner gemacht.
+ Es wurde so viel kommentiert, da ich mir das nie merken kann was padding und margin ist :) */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Verwendete Schriftart für den gesamten Text im Dokument */
     margin: 0;
     padding: 0;
-    background-color: #111;
-    color: #ddd;
+    background-color: #111; /* Dunkler Hintergrund für den gesamten Body */
+    color: #ddd; /* Helle Textfarbe für bessere Lesbarkeit auf dunklem Hintergrund */
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #333;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Maximale Breite des Inhaltsbereichs für bessere Lesbarkeit auf breiten Bildschirmen */
+    margin: 0 auto; /* Zentriert den Container horizontal auf der Seite */
+    padding: 20px; /* Innenabstand für den Container-Inhalt */
+    background-color: #333; /* Dunkler Hintergrund für den Container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Leichte Schatten für den Container */
 }
 
 /* Header-Stile */
 header {
-    text-align: center;
-    background-color: #ff8c00; /* Helle Orange-Farbe */
-    color: #000; /* Schwarze Schriftfarbe */
-    padding: 15px;
+    text-align: center; /* Zentriert den Text im Header */
+    background-color: #ff8c00; /* Helle Orange-Farbe für den Header-Hintergrund */
+    color: #000; /* Schwarze Schriftfarbe für den Text im Header */
+    padding: 15px; /* Innenabstand für den Header-Inhalt */
 }
 
 /* Stile für die Scrollbar der Blog-Einträge */
 #blog-entries {
-    max-height: 400px;
-    overflow-y: scroll;
+    max-height: 400px; /* Maximale Höhe für den Bereich der Blog-Einträge mit Scrollbalken */
+    overflow-y: scroll; /* Scrollbalken für den Fall, dass die Blog-Einträge den definierten Bereich überschreiten */
 }
 
 /* Gemeinsame Stile für Blog-Einträge */
 .blog-entry {
-    border: 1px solid #444;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #333;
+    border: 1px solid #444; /* Dünner Rand um jeden Blog-Eintrag */
+    padding: 10px; /* Innenabstand für den Blog-Eintrag */
+    margin-bottom: 10px; /* Abstand zwischen den einzelnen Blog-Einträgen */
+    background-color: #333; /* Dunkler Hintergrund für jeden Blog-Eintrag */
 }
 
 /* Stile für das Formular zum Erstellen neuer Blog-Einträge */
 .form-section {
-    margin-top: 20px;
+    margin-top: 20px; /* Abstand oberhalb des Formularbereichs */
 }
 
 #create-entry-form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Verwendet Flexbox für das Formular-Layout */
+    flex-direction: column; /* Formularelemente werden in einer Spalte angeordnet */
 }
 
 #create-entry-form label {
-    margin-bottom: 5px;
-    color: #ddd;
+    margin-bottom: 5px; /* Abstand unterhalb der Formularbeschriftung */
+    color: #ddd; /* Helle Textfarbe für die Formularbeschriftung */
 }
 
 /* Dunkler Grauton für Textfelder */
 #create-entry-form input,
 #create-entry-form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #222;
-    color: #ddd;
-    border: 1px solid #444;
+    margin-bottom: 10px; /* Abstand unterhalb der Textfelder */
+    padding: 10px; /* Innenabstand für Textfelder */
+    background-color: #222; /* Dunkler Hintergrund für Textfelder */
+    color: #ddd; /* Helle Textfarbe für Textfelder */
+    border: 1px solid #444; /* Dünner Rand um Textfelder */
 }
 
 /* Button-Stile */
 #create-entry-form button {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #ff8c00; /* Helle Orange-Farbe */
-    color: #000; /* Schwarze Schriftfarbe */
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px; /* Abstand unterhalb des Buttons */
+    padding: 10px; /* Innenabstand für den Button */
+    background-color: #ff8c00; /* Helle Orange-Farbe für den Button-Hintergrund */
+    color: #000; /* Schwarze Schriftfarbe für den Button-Text */
+    border: none; /* Kein Rand um den Button */
+    cursor: pointer; /* Zeige Handcursor bei Hover über den Button */
+    transition: background-color 0.3s ease-in-out; /* Sanfte Farbübergänge für den Button */
 }
 
 #create-entry-form button:hover {
     background-color: #ff9933; /* Dunklere Orange-Farbe im Hover-Zustand */
 }
-
-/* Füge hier weitere benutzerdefinierte Stile nach Bedarf hinzu */
