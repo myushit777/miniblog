@@ -14,9 +14,9 @@ public class BlogService {
     public BlogService() {
         // Fügen einige Mock-Daten hinzu (3 Einträge)
         blogEntries.add(new BlogEntry("Mike", "Ich habe scharf gegessen",
-                LocalDate.now(), "Mir hat der Arsch gebrannt"));
+                LocalDate.now(), "Mir hat der Po gebrannt"));
         blogEntries.add(new BlogEntry("Unbekannt", "Warum Nasenspray süchtig macht",
-                LocalDate.now(), "Erlöse mich"));
+                LocalDate.now(), "Das ist nur ein Schnupfen"));
         blogEntries.add(new BlogEntry("Rudolf", "Warum Weihnachten geil ist",
                 LocalDate.now(), "weils so ist"));
     }
